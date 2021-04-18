@@ -1,0 +1,52 @@
+@import "./reset.css";
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: 1fr 1 fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.gridContainer > div {
+  /* background-color: coral; */
+  /* width: 150px;
+  height: 150px; */
+  /* border: 2px solid green; */
+}
+
+.gridChild1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  padding: 200px;
+  background: grey;
+  background-image: url(http://traversymedia.com/downloads/assets/beachshowcase.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gridChild2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 50px;
+  background: #926239;
+}
+.gridChild3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 50px;
+}
+.gridChild4 {
+  width: 1fr;
+  background: #926239;
+}
+.gridChild5 {
+  width: 1fr;
+}
+.gridChild6 {
+  width: 1fr;
+  background: #926239;
+}
